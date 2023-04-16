@@ -1,24 +1,24 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
-import Button from './Button';
+import React from 'react';
+import Nav from './components/Nav';
 
 function App() {
-
 	return (
-		<div className='App border-red'>
-			<div>
-				<a href='https://vitejs.dev' target='_blank'>
-					<img src={viteLogo} className='logo' alt='Vite logo' />
-				</a>
-				<a href='https://reactjs.org' target='_blank'>
-					<img src={reactLogo} className='logo react' alt='React logo' />
-				</a>
+		<React.Fragment>
+			<div className='grid grid-cols-5'>
+				<Nav />
+				<main className='col-span-4 bg-red-400'>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, facilis cumque? Neque
+					libero unde, inventore totam rerum sapiente cum fugit nisi, eum optio repudiandae vero
+					facilis, laboriosam quas minima obcaecati! Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Exercitationem nihil eligendi voluptates laborum voluptatibus laudantium
+					similique fugit aliquid perspiciatis! Voluptas dolor eius suscipit, saepe doloremque
+					recusandae cum necessitatibus in assumenda. Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Dolores perferendis unde magnam illum cupiditate, culpa fugit tenetur
+					rem necessitatibus maiores assumenda ea, quisquam quam in sequi nihil mollitia cumque
+					reiciendis.
+				</main>
 			</div>
-			<h1>App Remote from 5003</h1>
-			<Button></Button>
-		</div>
+		</React.Fragment>
 	);
 }
 
